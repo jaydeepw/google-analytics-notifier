@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nodester Application Watcher</title>
+    <style>
+      body {
+        padding: 10px;
+        width: 220px;
+        overflow-x:hidden;
+      }
+    </style>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--- <script type="text/javascript">
+
+      function getApps(){
+        console.log('saving data');
+        try{
+          localStorage.setItem('name', 'Jaydeep');
+        } catch(e){
+          console.error('Error while setting data in localStorage.');
+        }
+          
+      }
+    </script>  -->
+  </head>
+  <script src="/bootstrap/js/jquery-1.7.2.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="app-ui.js"></script>
+  <body>
+    <ul class="nav nav-tabs">
+      <!-- <li class="active"><a href="#nodester-apps" data-toggle="tab">My Nodester Apps</a></li> -->
+      <li class="active"><a href="#configuration" data-toggle="tab">Notification Rules</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- <div class="tab-pane " id="nodester-apps">
+        <div class="row-fluid" id="appsList">
+          
+        </div>
+        <hr>
+        <div class="row-fluid" id="serverStatus"></div>
+      </div> -->
+      <div class="tab-pane active" id="configuration">
+        <!-- <form id="configurationForm"> -->
+          <label for="visitor_count" rel="tooltip" title="You will receive a notification if the number of visitors exceed this value">Visitor Count</label>
+          <input type="text" name="visitor_count" id="visitor_count"/>
+          <label class="checkbox"><input type="checkbox" id="silent-operations">Silent</label>
+          <!-- <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass"/> -->
+          <input type="submit" id="save-rules" value="Save" class="btn btn-primary">
+        <!-- </form> -->
+        <hr>
+        <div class="about">
+          <span>About this extension</span>
+          <a href="http://twitter.com/jaydeep_w" target="_blank"><img src="/img/twitter-bird-light-bgs.png" width="20"></a>
+          <a href="http://github.com/jaydeepw" target="_blank"><img src="/img/github-icon.png" width="16"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
