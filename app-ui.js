@@ -29,7 +29,6 @@ $(document).ready(function(){
 
 function init(){
 	var rules = JSON.parse(localStorage.getItem('rules'));
-	console.log(rules);
 
 	//first time load.
 	if( rules == null ){

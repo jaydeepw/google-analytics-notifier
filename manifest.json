@@ -1,12 +1,12 @@
 {
   "name": "AnalyticsNotifier",
-  "version": "12.9.22.4",
+  "version": "12.10.8.1",
   "manifest_version": 2,
   "description": "Google Analytics notifications based on user defined rules.",
   "browser_action": {
     "default_icon": "48x48.png",
     "default_popup": "popup.html",
-    "default_title": "AnalyticsNotifier"      // optional; shown in tooltip
+    "default_title": "AnalyticsNotifier"
   },
  "icons": { "16": "16x16.png",
            "48": "48x48.png",
